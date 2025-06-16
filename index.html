@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>קוף ובננה - למידת פייתון</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>לומדים לתכנת עם הקוף!</h1>
+  <div class="legend">
+    <strong>פקודות זמינות:</strong><br>
+    <code>למעלה()</code> - להזיז את הקוף שורה למעלה<br>
+    <code>למטה()</code> - להזיז את הקוף שורה למטה<br>
+    <code>שמאלה()</code> - להזיז את הקוף עמודה שמאלה<br>
+    <code>ימינה()</code> - להזיז את הקוף עמודה ימינה<br>
+    <code>חזור(מספר, פעולה)</code> - חזור על הפעולה מספר פעמים<br>
+    <small>דוגמה: <code>חזור(3, ימינה)</code></small>
+  </div>
+
+  <div id="instructions">נסה להזיז את הקוף אל הבננה 🍌</div>
+
+  <textarea id="code" rows="6" cols="70" placeholder="כתוב כאן את הקוד שלך..."></textarea><br>
+  <div class="button-container">
+    <button onclick="runCode()">הרץ</button>
+    <button onclick="nextLevel()">שלב הבא</button>
+  </div>
+
+  <canvas id="game" width="660" height="660"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
